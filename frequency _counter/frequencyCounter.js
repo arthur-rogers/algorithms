@@ -1,3 +1,7 @@
+/*
+* Works for sorted arrays only!!!
+*/
+
 function same(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     console.log('different length');
