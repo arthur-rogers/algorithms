@@ -1,4 +1,4 @@
-function findNumbersForZeroSum(arr) {
+function findNumbersForZeroSum(arr: Array<number>): Array<number> | undefined {
   let begin = 0;
   let end = arr.length - 1;
   while(begin < end) {
