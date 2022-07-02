@@ -4,7 +4,7 @@ function binarySearch<Type>(arr: Array<Type>, val: Type): number {
   let middile = Math.floor((begin + end) / 2);
   while (arr[middile] !== val && begin < end) {
     if (val < arr[middile]) end = middile - 1;
-    if (val > arr[middile]) begin = middile + 1;
+    else begin = middile + 1;
     middile = Math.floor((begin + end) / 2);
   }
 

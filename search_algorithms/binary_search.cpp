@@ -1,13 +1,12 @@
 #include <iostream>
 #include <vector>
-#include <string>
 
 template<typename T>
 int binary_search(std::vector<T> vect, T value) {
   size_t begin = 0, end = vect.size() -1, middle = (end + begin) / 2;
   while(vect[middle] != value && begin < end) {
     if (value > vect[middle]) begin = middle + 1;
-    if (value < vect[middle]) end = middle - 1;
+    else end = middle - 1;
     middle = (end + begin) / 2;
   }
   return vect[middle] == value ? middle : -1;
