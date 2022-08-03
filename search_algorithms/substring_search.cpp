@@ -18,7 +18,7 @@ int main()
   std::string mainstr, substr;
   while (!std::cin.eof())
   {
-    std::cout << "Enter main string: ";
+    std::cout << "Enter main string: "; 
     std::getline(std::cin, mainstr);
     std::cout << "Enter substring: ";
     std::getline(std::cin, substr);
