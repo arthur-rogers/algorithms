@@ -10,7 +10,7 @@ void insertion_sort(std::vector<T> &vect) {
       if (*j > curval) {
         *(j + 1) = *j;
         *j = curval;
-      }
+      } 
     }
   }
 }
